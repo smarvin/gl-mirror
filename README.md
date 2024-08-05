@@ -1,5 +1,7 @@
 # Scot's sample GitLab project
 
+New line to push to GH.
+
 This sample project shows how a project in GitLab looks for demonstration purposes. It contains issues, merge requests, and Markdown files in many branches. The content is named and filled with lorem ipsum.
 
 This para is a sample edit. Just to see if the mirroring setup works.
