@@ -1,3 +1,4 @@
+
 # Scot's sample GitLab project
 
 This sample project shows how a project in GitLab looks for demonstration purposes. It contains issues, merge requests, and Markdown files in many branches. The content is named and filled with lorem ipsum.
