@@ -1,0 +1,21 @@
+name: Sync with GitLab on PR Merge
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  sync-to-gitlab:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Trigger GitLab Merge Request
+      run: |
+        curl --request POST --form "token=$GITLAB_TOKEN" --form "ref=main" https://gitlab.com/api/v4/projects/$GITLAB_PROJECT_ID/trigger/pipeline
+      env:
+        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        GITLAB_PROJECT_ID: ${{ secrets.GITLAB_PROJECT_ID }}
