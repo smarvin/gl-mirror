@@ -1,6 +1,6 @@
 # Scot's sample GitLab project
 
-New line to push to GH.
+Testing round trip: stage one from GL to GH.
 
 This sample project shows how a project in GitLab looks for demonstration purposes. It contains issues, merge requests, and Markdown files in many branches. The content is named and filled with lorem ipsum.
 
